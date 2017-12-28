@@ -17,8 +17,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "bee-layout": "^1.2.7",
-    "bee-panel": "^1.0.0",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "cssnano": "^3.10.0",
@@ -36,6 +34,9 @@
     "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {
+    "bee-layout": "^1.2.7",
+    "bee-panel": "^1.0.0",
+    "prop-types": "^15.6.0",
     "tinper-bee": "^1.2.0"
   }
 }
