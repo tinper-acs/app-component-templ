@@ -67,7 +67,7 @@ const resolve = {
 const rules = [{
   test: /\.js[x]?$/,
   exclude: /(node_modules)/,
-  include: path.resolve("src"),
+  // include: path.resolve("src"),
   use: [{
     loader: "babel-loader"
   }]
