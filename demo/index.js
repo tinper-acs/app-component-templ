@@ -1,5 +1,5 @@
-import { Con, Row, Col } from 'bee-layout';
-import { Panel } from 'bee-panel';
+// import { Con, Row, Col } from 'bee-layout';
+// import { Panel } from 'bee-panel';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Temp from '../src';
@@ -35,13 +35,14 @@ class Demo extends Component {
             </Temp>
         );
         return (
-            <Col md={12} >
-                <h3>{ title }</h3>
-                <p>{ desc }</p>
-                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
-                    <pre><code className="hljs javascript">{ code }</code></pre>
-                </Panel>
-            </Col>
+            // <Col md={12} >
+            //     <h3>{ title }</h3>
+            //     <p>{ desc }</p>
+            //     <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
+            //         <pre><code className="hljs javascript">{ code }</code></pre>
+            //     </Panel>
+            // </Col>
+            <div>空空空空空空</div>
         )
     }
 }
@@ -52,15 +53,16 @@ class DemoGroup extends Component {
     }
     render () {
         return (
-                <Row>
-                    {DemoArray.map((child,index) => {
+                // <Row>
+                //     {DemoArray.map((child,index) => {
 
-                        return (
-                            <Demo example= {child.example} title= {child.title} code= {child.code} desc= {child.desc} key= {index}/>
-                        )
+                //         return (
+                //             <Demo example= {child.example} title= {child.title} code= {child.code} desc= {child.desc} key= {index}/>
+                //         )
 
-                    })}
-                </Row>
+                //     })}
+                // </Row>
+                <div>空空空空空空</div>
         )
     }
 }
