@@ -1,15 +1,17 @@
+
 import { Con, Row, Col } from 'bee-layout';
 import { Panel } from 'bee-panel';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Temp from '../src';
+import Button from 'bee-button';
+import Demo1 from './demolist/Demo1';
+import './demo.scss';
 
 const CARET = <i className="uf uf-arrow-down"></i>;
 
 const CARETUP = <i className="uf uf-arrow-up"></i>;
 
-
-var Demo1 = require("./demolist/Demo1");var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮","code":"/**\n *\n * @title 默认按钮\n * @description 基础按钮\n *\n */\n\nimport React, { Component } from 'react';\nimport Button from 'bee-button';\n\n\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Button>Default</Button>\n                <Button disabled>disabled</Button>\n                <Button shape=\"border\">border</Button>\n                <Button shape=\"round\">round</Button>\n            </div>\n        )\n    }\n}\n","desc":" 基础按钮"}]
+var DemoArray = [{"example":<Demo1 />,"title":" 应用组件名称","code":"/**\n *\n * @title 应用组件名称\n * @description 应用组件描述\n *\n */\n\nimport React, { Component } from 'react';\nimport Button from 'bee-button';\n\n class Demo1 extends Component {\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Button isSubmit={true}>Default kkkkkkkkkk </Button>\n                <Button disabled>disabled</Button>\n                <Button shape=\"border\">border</Button>\n                <Button shape=\"round\">round</Button>\n            </div>\n        )\n    }\n}\n\n\n","desc":" 应用组件描述"}]
 
 class Demo extends Component {
     constructor(props){
@@ -20,7 +22,7 @@ class Demo extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
-        this.setState({ open: !this.state.open })
+        this.setState({ open:!this.state.open })
     }
 
     render () {
@@ -29,10 +31,10 @@ class Demo extends Component {
         let text = this.state.open ? "隐藏代码" : "查看代码";
 
         const footer = (
-            <Temp shape="block" onClick={ this.handleClick }>
+            <Button shape="block" onClick={ this.handleClick }>
                 { caret }
                 { text }
-            </Temp>
+            </Button>
         );
         return (
             <Col md={12} >

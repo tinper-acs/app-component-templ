@@ -1,19 +1,21 @@
 /**
  *
- * @title 默认按钮
- * @description 基础按钮
+ * @title 应用组件名称
+ * @description 应用组件描述
  *
  */
 
 import React, { Component } from 'react';
-import Temp from '../../src';
+import Temp from '../../src/index';
 
-export default class Demo1 extends Component {
+ class Demo1 extends Component {
     render () {
         return (
             <div className="demoPadding">
-                <Temp></Temp>
+                <Temp />
             </div>
         )
     }
 }
+
+export default Demo1;

@@ -30,7 +30,7 @@ const proxyConfig = [{
 
 //静态服务托管
 const staticConfig = {
-  folder: "src/static"
+  folder: "./static"
 };
 
 //提取package里的包
@@ -77,7 +77,15 @@ const rules = [{
     use: ["css-loader", "postcss-loader"],
     fallback: "style-loader"
   })
-}, {
+},
+{
+  test: /\.scss$/,
+  use: ExtractTextPlugin.extract({
+    fallback: 'style-loader',
+    use: ['css-loader', 'sass-loader']
+  })
+},
+{
   test: /\.less$/,
   use: ExtractTextPlugin.extract({
     use: ['css-loader', 'postcss-loader', 'less-loader'],
@@ -126,7 +134,8 @@ const devConfig = {
       name: "vendors"
     }),
     new ExtractTextPlugin({
-      filename: "[name].[hash].css"
+      filename: "[name].css"
+      // filename: "[name].[hash].css"
     }),
     new webpack.NamedModulesPlugin(),
     new OpenBrowserPlugin({
@@ -135,7 +144,7 @@ const devConfig = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./dist/index.html",
+      template: "./index.html",
       inject: "body",
       hash: false,
       favicon: "./src/assets/images/favicon.png",
@@ -150,7 +159,7 @@ const devConfig = {
 const prodConfig = {
   entry: {
     vendors: getVendors(),
-    app: ["babel-polyfill","./demo/index.js"]
+    app: ["babel-polyfill","./src/index.js"]
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -177,7 +186,7 @@ const prodConfig = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./dist/index.html",
+      template: "./index.html",
       inject: "body",
       hash: true,
       favicon: "./src/assets/images/favicon.png",
