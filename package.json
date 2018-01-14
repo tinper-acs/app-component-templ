@@ -10,7 +10,7 @@
   "author": "yueming@yonyou.com",
   "license": "MIT",
   "devDependencies": {
-    "ac-tools": "^0.0.4",
+    "ac-tools": "^0.0.6",
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
