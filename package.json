@@ -7,7 +7,7 @@
     "dev": "uba server",
     "build": "uba build"
   },
-  "author": "yueming@yonyou.com",
+  "author": "wangshih@yonyou.com",
   "license": "MIT",
   "devDependencies": {
     "ac-tools": "^0.0.6",
