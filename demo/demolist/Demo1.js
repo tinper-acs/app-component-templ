@@ -12,7 +12,7 @@ import Temp from '../../src/index';
     render () {
         return (
             <div className="demoPadding">
-                <Temp >tools测试代码 111</Temp>
+                <Temp >tools测试代码</Temp>
             </div>
         )
     }
