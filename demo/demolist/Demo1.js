@@ -7,8 +7,7 @@
 
 import React, { Component } from 'react';
 import Temp from '../../src/index';
-
- class Demo1 extends Component {
+class Demo1 extends Component {
     render () {
         return (
             <div className="demoPadding">

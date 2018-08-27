@@ -17,7 +17,7 @@ module.exports = webpackMerge(baseConfig, {
   },
   // externals:['react','react-dom','prop-types'],
   output: {
-      filename: 'index.js',
+      filename: '[name].[hash].js',
       path: path.join(__dirname, '../ghpages'),
       publicPath: '/'
   },
@@ -32,33 +32,11 @@ module.exports = webpackMerge(baseConfig, {
       },
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              sourceMap: true,
-              importLoader: 2
-            }
-          },
-          "sass-loader"
-        ]
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.less$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              sourceMap: true,
-              importLoader: 2
-            }
-          },
-          "less-loader"
-        ]
+        use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   },

@@ -6,16 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clear": "rimraf dist",
-    "clear:gh-pages": "rimraf gh-pages",
+    "clear:gh-pages": "rimraf ghpages",
     "build": "npm run clear && webpack --config config/webpack.config.prod.js",
     "dev": "webpack-dev-server --config config/webpack.config.dev.js",
     "lint": "eslint --ext .js --ext .jsx src/",
     "lint-fix": "eslint --fix --ext .js --ext .jsx src/",
     "precommit": "npm run lint",
-    "ghpages": "npm run clear:gh-pages && webpack --config config/webpack.config.ghpages.js"
+    "deploy": "npm run clear:gh-pages && webpack --config config/webpack.config.ghpages.js"
   },
-  "author": "cp",
-  "license": "ISC",
+  "author": "wangshih@yonyou.com && chenpanf@yonyou.com",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
