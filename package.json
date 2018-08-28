@@ -73,9 +73,11 @@
     "prop-types": "^15.6.0"
   },
   "dependencies": {
+    "bee-layout": "^1.2.7",
+    "bee-panel": "^1.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "tinper-bee-core": "^0.4.1",
-    "tinper-bee": "^1.2.7"
+    "tinper-bee": "^1.2.7",
+    "tinper-bee-core": "^0.4.1"
   }
 }
