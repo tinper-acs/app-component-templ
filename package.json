@@ -1,5 +1,5 @@
 {
-  "name": "@yonyou/app-component-templ",
+  "name": "@yonyou/ac-component-templ",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -13,6 +13,14 @@
     "lint-fix": "eslint --fix --ext .js --ext .jsx src/",
     "precommit": "npm run lint",
     "deploy": "npm run clear:gh-pages && webpack --config config/webpack.config.ghpages.js"
+  },
+  "bugs": {
+    "url": "https://github.com/tinper-acs/app-component-templ/issues"
+  },
+  "homepage": "https://github.com/tinper-acs/app-component-templ#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinper-acs/app-component-templ.git"
   },
   "author": "wangshih@yonyou.com && chenpanf@yonyou.com",
   "license": "MIT",
@@ -68,8 +76,6 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "tinper-bee-core": "^0.4.1",
-    "bee-layout": "^1.2.7",
-    "bee-panel": "^1.0.0",
-    "bee-button": "^1.0.6"
+    "tinper-bee": "^1.2.7"
   }
 }

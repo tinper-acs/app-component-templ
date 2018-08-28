@@ -13,7 +13,7 @@ class Temp extends Component {
   render() { 
     return (
       <div className="temp-main">
-        helow Temp
+        示例
       </div>
     );
   }
