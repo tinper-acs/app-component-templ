@@ -37,11 +37,11 @@ module.exports = webpackMerge(baseConfig, {
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
-            options: {
-              modules: true,
-              sourceMap: true,
-              importLoader: 2
-            }
+            // options: {
+            //   modules: true,
+            //   sourceMap: true,
+            //   importLoader: 2
+            // }
           },
           "sass-loader"
         ]
@@ -71,7 +71,7 @@ module.exports = webpackMerge(baseConfig, {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true 
+        sourceMap: true
       }),
       new OptimizeCSSAssetsPlugin({})  // use OptimizeCSSAssetsPlugin
     ], // [new UglifyJsPlugin({...})]
