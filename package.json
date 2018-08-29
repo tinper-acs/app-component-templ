@@ -54,6 +54,7 @@
     "markdown-styles": "^3.1.10",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
+    "open-browser-webpack-plugin": "0.0.5",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss-loader": "^3.0.0",
     "react-hot-loader": "^4.3.4",

@@ -4,6 +4,7 @@ const webpackMerge = require('webpack-merge')
 const baseConfig = require('./webpack.base')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OpenBrowserPlugin = require("open-browser-webpack-plugin");
 const config = webpackMerge(baseConfig, {
   mode: 'development',
   devtool: '#cheap-module-eval-source-map',
@@ -73,6 +74,9 @@ const config = webpackMerge(baseConfig, {
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
       }
+    }),
+    new OpenBrowserPlugin({
+      url: `http://127.0.0.1:3000`
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
