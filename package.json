@@ -24,6 +24,11 @@
   },
   "author": "wangshih@yonyou.com && chenpanf@yonyou.com",
   "license": "MIT",
+  "files": [
+    "package.json",
+    "dist",
+    "README.md"
+  ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
