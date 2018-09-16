@@ -58,10 +58,10 @@ ac-tools sample
 npm run dev
 ```
 
-生成组件
+实例代码打包
 
 ```
-npm run build
+npm run deploy
 ```
 
 将markdown 文件转为静态文件，并上传github.io网站
@@ -70,9 +70,15 @@ npm run build
 ac-tools md
 ```
 
-实例代码打包
+生成组件
 
 ```
-npm run deploy
+npm run build
+```
+
+上传ynpm或者npm
+
+```
+ynpm publish
 ```
 
