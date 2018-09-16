@@ -79,6 +79,6 @@ npm run build
 上传ynpm或者npm
 
 ```
-ynpm publish
+ynpm publish      # npm publish
 ```
 
