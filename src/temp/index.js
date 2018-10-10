@@ -10,10 +10,10 @@ class Temp extends Component {
     super(props);
   }
 
-  render() { 
+  render() {
     return (
       <div className="temp-main">
-        示例
+        示例fsfasdfassdffsf
       </div>
     );
   }
