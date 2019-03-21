@@ -76,6 +76,8 @@
     "webpack-node-externals": "^1.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "bee-layout": "latest",
+    "bee-panel": "latest",
     "tinper-bee": "latest",
     "tinper-bee-core": "latest"
   },
