@@ -1,5 +1,5 @@
 {
-  "name": "@yonyou/ac-component-templ",
+  "name": "ac-component-templ",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -42,7 +42,7 @@
     "babel-preset-es2015-loose": "^8.0.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-    "bee-clipboard": "^2.0.0",
+    "bee-clipboard": "^2.0.2",
     "bee-drawer": "0.0.2",
     "bee-layout": "latest",
     "bee-panel": "latest",
